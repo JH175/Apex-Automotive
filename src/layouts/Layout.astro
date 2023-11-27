@@ -1,0 +1,50 @@
+---
+import Nav from '../components/Nav';
+import background from '../assets/images/background.svg'
+import { Image } from 'astro:assets';
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta
+      name='description'
+      content='Apex Automotive Services - Serving Northern Kentucky and the Greater Cincinnati Area including Hebron, Burlington, Florence and more.'
+    />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <title>Apex Automotive</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap'
+      rel='stylesheet'
+    />
+  </head>
+  <body class='bg-neutral-900 text-white'>
+    <div class="-z-10 fixed top-0 left-0" >
+      <Image src={background} alt=''
+      decoding="async"
+      loading="lazy"
+ />
+    </div>
+   
+    <div class='h-full p-10'>
+
+   
+      <Nav client:load />
+      <slot />
+      <footer class="flex flex-col items-center">
+        <p>
+          © Apex Automotive LLC
+        </p>
+        <p>
+          Website by <a class="text-lime-300" href="https://www.hink.dev">hink.dev</a>
+        </p>
+
+       
+      </footer>
+    </div>
+  </body>
+</html>
