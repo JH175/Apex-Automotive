@@ -4,16 +4,23 @@ export default function Contact() {
 			<h2 className="text-xl">Contact Us:</h2>
 			<div className="flex flex-col justify-evenly gap-10 md:flex-row">
 				<div className="flex flex-col gap-10">
-					<p className="text-xl">Call: (859) 802-3693</p>
-					<p>Email: apex@apexnky.com</p>
 					<div>
-						{/* <p className="underline underline-offset-4">Shop Address</p>
-						<p>6613 Camp Ernst Road</p>
-						<p>Burlington, KY 41005</p> */}
+						<p className="text-xl">Call: (859) 802-3693</p>
+						<p>Email: apex@apexnky.com</p>
+					</div>
+					<div>
+						<p className="underline underline-offset-4">Shop Address</p>
+						<a target="_blank" href="https://maps.app.goo.gl/kzyLWztFWR45bXRQ8">
+							<p className="text-lime-300">6613 Camp Ernst Road</p>
+							<p className="text-lime-300">Burlington, KY 41005</p>
+						</a>
+					</div>
+					<div>
 						<p className="underline underline-offset-4">Mobile Service Area</p>
 						<p>Northern Kentucky / Greater Cincinnati Area</p>
 						<p className="text-lime-300">Hebron, Burlington, Florence +</p>
 					</div>
+
 					<div>
 						<p className="underline underline-offset-4">Hours</p>
 						<p>Monday - Friday</p>
